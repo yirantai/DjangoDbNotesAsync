@@ -17,7 +17,7 @@ VALID_MODEL_APPS = []
 
 error_sqls = []
 
-app_src_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+app_src_dir = os.path.dirname(settings.BASE_DIR)
 cursor = connections['default'].cursor()
 
 
