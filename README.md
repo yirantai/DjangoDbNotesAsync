@@ -7,6 +7,9 @@
 4.仅会同步已经添加到INSTALLED_APPS中的APP model的备注到数据库。
 ```
 
+### 安装：
+  pip install DjangoDbNotesAsync
+
 ### 使用方法:
 ```
 1. 将DjangoDbNotesAsync添加到django项目中的INSTALLED_APPS
