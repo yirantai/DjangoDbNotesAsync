@@ -102,8 +102,8 @@ class DbNotesAsync(BaseCommand):
                                                       field_type=field_type, field_length=field_length,
                                                       field_decimal_places=field_decimal_places,
                                                       comment=field.help_text)
-        for item in error_sqls:
-            print(item)
+        for sql in error_sqls:
+            print('altert table column error: ', sql)
         return VALID_MODEL_APPS
 
     @staticmethod
@@ -115,7 +115,7 @@ class DbNotesAsync(BaseCommand):
             try:
                 cursor.execute(sql)
             except:
-                print('?????', sql)
+                print('alter table error: ', sql)
         return
 
     @staticmethod
