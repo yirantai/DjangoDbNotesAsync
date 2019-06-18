@@ -19,20 +19,18 @@
 ### 执行输出：
 1.正常输出：
   ```
-  正在修改表user
-  正在修改表account
-  正在修改表account_type
-  正在修改表group
-  正在修改表profile
+表:【user】, 注释信息: 【用户表】添加成功......
+表:【user】, 字段: 【created_at】, 注释信息: 【创建时间】, 添加成功......
+表:【user】, 字段: 【updated_at】, 注释信息: 【更新时间】, 添加成功......
+表:【user】, 字段: 【created_timestamp】, 注释信息: 【创建时间戳】, 添加成功......
+表:【user】, 字段: 【is_deleted】, 注释信息: 【是否删除】, 添加成功......
+表:【user】, 字段: 【username】, 注释信息: 【用户名】, 添加成功......
+表:【user】, 字段: 【phone】, 注释信息: 【手机号码】, 添加成功......
   ...
   ```
 2.异常输出：
   ```
-  alter table error: alter table user comment "用户表" 
-  ```
-  ```
-  altert table column error: alter table `procurement_statistic` modify column `unit_price_differ` decimal(11, 2) 
-  COMMENT "调整后采购单价差值"
+  错误信息:  表: user, 字段: created_timestamp, 注释信息: 创建时间戳, sql: alter table `carrier_leaderrole` modify column `created_timestamp` float(None) COMMENT "创建时间戳" ，原因rror in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'None) COMMENT "创建时间戳"\' at line 1')
   ```
   如遇异常输出，请检查model中字段设置，修改后手动执行。
   

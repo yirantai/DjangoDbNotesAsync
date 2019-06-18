@@ -96,7 +96,7 @@ class DbNotesAsync(BaseCommand):
                 cursor.execute(sql)
             except Exception as e:
                 print('修改表{}发生异常，注释为为: {}，异常原因: {}'.format(db_table, table_note, e))
-            print('成功修改表: 【{}】, 添加备注为: 【{}】......'.format(db_table, table_note))
+            print('表:【{}】, 注释信息为: 【{}】添加成功......'.format(db_table, table_note))
         return
 
     @staticmethod
