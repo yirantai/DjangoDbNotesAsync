@@ -7,6 +7,10 @@
 4.仅会同步已经添加到INSTALLED_APPS中的APP model的备注到数据库。
 ```
 
+版本说明：
+v1.0.2: 1.优化表，字段备注写入方式；2.优化控制台输出信息。
+v1.0.0: 初始版本发布。
+
 ### 安装：
   pip install DjangoDbNotesAsync
 
