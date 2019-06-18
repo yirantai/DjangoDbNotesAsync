@@ -9,6 +9,7 @@
 
 版本说明：
 v1.0.2: 1.优化表，字段备注写入方式；2.优化控制台输出信息。
+v1.0.1: 优化写入方式。
 v1.0.0: 初始版本发布。
 
 ### 安装：
@@ -17,7 +18,8 @@ v1.0.0: 初始版本发布。
 ### 使用方法:
 ```
 1. 将DjangoDbNotesAsync添加到django项目中的INSTALLED_APPS
-2. 在django项目目录，执行python manage.py db_notes_async
+2. 将要同步的app添加到INSTALLED_APPS中
+3. 在django项目目录，执行python manage.py db_notes_async
 ```
 ### 使用备注：
 ```
