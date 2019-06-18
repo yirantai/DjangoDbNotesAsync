@@ -15,6 +15,11 @@
 1. 将DjangoDbNotesAsync添加到django项目中的INSTALLED_APPS
 2. 在django项目目录，执行python manage.py db_notes_async
 ```
+### 使用备注：
+```
+1.同步表名称时，优先取表模型的Meta属性中verbose_name中字段。如果没取到会取表.__doc__属性。
+2.仅同步字段中help_text不为空属性的字段。
+```
 
 ### 执行输出：
 1.正常输出：
